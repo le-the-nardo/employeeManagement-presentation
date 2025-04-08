@@ -1,0 +1,58 @@
+.card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #b2f2ff;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .details {
+    flex-grow: 1;
+  }
+  
+  .department {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .date {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #444;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .viewBtn {
+    background-color: #48d170;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteBtn {
+    background: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+  }
+  

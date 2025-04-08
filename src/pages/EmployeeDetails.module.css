@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+    align-items: flex-start;
+    font-family: sans-serif;
+  }
+  
+  .avatar {
+    width: 200px;
+    height: 200px;
+    background-color: #baf1f1;
+    border-radius: 10px;
+  }
+  
+  .info {
+    flex-grow: 1;
+  }
+  
+  .updateSection {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .updateSection input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .updateSection button {
+    background-color: #7be090;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hireDate {
+    text-align: right;
+    font-size: 0.9rem;
+  }
+  
