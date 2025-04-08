@@ -30,7 +30,7 @@ export default function EmployeeDetails() {
       .then(res => res.json())
       .then(data => {
         setEmployee(data);
-        setSelectedDepartmentId('');
+        setSelectedDepartmentId(data.departmentId);
       });
   };
 
