@@ -26,7 +26,11 @@ export default function EmployeeDetails() {
 
   // Get Employee Data
   const fetchEmployee = () => {
-    fetch(`http://localhost:5056/employee/${id}`)
+    fetch(`http://localhost:5056/employee/${id}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Api-Key': 'authorization-key-1209381029038'
+        }})
       .then(res => res.json())
       .then(data => {
         setEmployee(data);
@@ -36,7 +40,11 @@ export default function EmployeeDetails() {
 
   useEffect(() => {
     fetchEmployee();
-    fetch('http://localhost:5056/department/all')
+    fetch('http://localhost:5056/department/all', {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Api-Key': 'authorization-key-1209381029038'
+        }})
       .then(res => res.json())
       .then(data => setDepartments(data));
   }, [id]);
@@ -58,7 +66,10 @@ export default function EmployeeDetails() {
     try {
       const response = await fetch(`http://localhost:5056/employee/${employee.id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+            'Content-Type': 'application/json',
+            'X-Api-Key': 'authorization-key-1209381029038'
+        },
         body: JSON.stringify(body),
       });
 

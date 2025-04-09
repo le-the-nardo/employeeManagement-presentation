@@ -21,7 +21,11 @@ function Home() {
 
   // Carrega os funcionários na montagem do componente
   useEffect(() => {
-    fetch('http://localhost:5056/employee/all')
+    fetch('http://localhost:5056/employee/all', {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Api-Key': 'authorization-key-1209381029038'
+        }})
       .then(res => {
         if (!res.ok) throw new Error('Erro ao buscar funcionários');
         return res.json();
@@ -38,6 +42,10 @@ function Home() {
     try {
       const response = await fetch(`http://localhost:5056/employee/${id}`, {
         method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Api-Key': 'authorization-key-1209381029038'
+        },
       });
   
       if (!response.ok) {
@@ -59,6 +67,7 @@ function Home() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'X-Api-Key': 'authorization-key-1209381029038'
         },
         body: JSON.stringify(employee),
       });
@@ -71,7 +80,11 @@ function Home() {
       console.log('Funcionário criado:', result);
 
       // Atualiza a lista com o novo funcionário
-      await fetch('http://localhost:5056/employee/all')
+      await fetch('http://localhost:5056/employee/all', {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Api-Key': 'authorization-key-1209381029038'
+        }})
         .then(res => res.json())
         .then(data => setEmployees(data));
     } catch (error) {
