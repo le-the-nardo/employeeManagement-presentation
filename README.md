@@ -1,54 +1,95 @@
-# React + TypeScript + Vite
+# 🖥️ Employee Management – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Introduction
 
-Currently, two official plugins are available:
+This is the **frontend** of the Employee Management System, built with **React + Vite** and styled using **CSS Modules**. It allows users to list, filter, create, delete, and view detailed information about employees.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> 👉 Full-stack version: [Backend Repository](https://github.com/le-the-nardo/employeeManagement)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 **Live filtering** by employee name and department  
+- ➕ **Modal form** to create new employees  
+- 🗑️ Deletion with optimistic update  
+- 📄 View details with route navigation  
+- ✅ Protected requests using API Key  
+- 🧹 Clean UI & reusable components  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- React (via Vite)  
+- TypeScript  
+- CSS Modules  
+- React Router DOM  
+- Fetch API  
+- Vite Proxy (optional for backend integration)
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+Ensure you have the following installed:
+
+- NodeJs  → [Download](https://nodejs.org)
+- Visual Studio Code (optional)
+
+### 📦 Installation
+
+Clone the repository:
+
+```sh
+git clone https://github.com/le-the-nardo/employeeManagement-presentation
+cd employeeManagement-presentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ▶️ Running Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Install dependencies
+npm install
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+# Start development server
+npm run dev
 ```
+
+## 📂 Project Structure
+
+```
+📦 EmployeeManagement-Presentation/
+📂 public/
+📂 src/
+┣ 📂 components/
+┃ ┣ EmployeeCard/
+┃ ┣  NewEmployeeForm/
+┃ ┗  Header.tsx
+┣ 📂 data/
+┣ 📂 pages/
+┃ ┣ Home.tsx
+┃ ┗ EmployeeDetails.tsx
+┣ 📂 routes/
+┃ ┗ AppRoutes.tsx
+┣ App.tsx
+┣ main.tsx
+┗ index.tsx
+```
+
+## 🔐 API Authentication
+
+- All HTTP requests include an **API Key** in the headers
+
+## 💡 What Sets This Apart
+
+- Built from scratch with scalability in mind
+- Modular architecture and reusable components
+- Proactively added filtering and search functionality
+- Easy-to-read and maintain codebase
+
+## 🧑‍💻 Author
+
+- Developed with ❤️ and ☕ by **Leonardo Gomes**
+- 💼 Senior Software Engineer from Brazil 🇧🇷
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

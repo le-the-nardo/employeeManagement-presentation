@@ -78,7 +78,7 @@ export default function EmployeeDetails() {
       alert('Department updated!');
       fetchEmployee(); // Update data on screen
     } catch (err) {
-      alert('Erro ao atualizar');
+      alert('Error to update.');
       console.error(err);
     }
   };
