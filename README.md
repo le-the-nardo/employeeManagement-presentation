@@ -6,6 +6,13 @@ This is the **frontend** of the Employee Management System, built with **React +
 
 > 👉 Full-stack version: [Backend Repository](https://github.com/le-the-nardo/employeeManagement)
 
+## 🎥 Demo
+
+<p align="center">
+  <img src = "https://github.com/le-the-nardo/employeeManagement-presentation/src/assets/gif-presentation.gif" height="700">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
 ## 🚀 Features
 
 - 🔍 **Live filtering** by employee name and department  
