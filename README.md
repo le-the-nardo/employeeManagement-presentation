@@ -9,7 +9,7 @@ This is the **frontend** of the Employee Management System, built with **React +
 ## 🎥 Demo
 
 <p align="center">
-  <img src = "https://github.com/le-the-nardo/employeeManagement-presentation/src/assets/gif-presentation.gif" height="700">
+  <img src = "https://github.com/le-the-nardo/employeeManagement-presentation/blob/main/src/assets/gif-presentation.gif" height="700">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
